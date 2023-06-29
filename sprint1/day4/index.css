@@ -1,0 +1,30 @@
+#container{
+    text-align: center;
+}
+
+#display{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+
+
+
+.item{
+    border: 1px solid;
+    padding: 15px;
+}
+
+.item h1{
+    font-size: 15px;
+}
+
+.item >div:nth-child(2){
+    background-color: gray;
+}
+
+
+img{
+    width: 100%;
+}
