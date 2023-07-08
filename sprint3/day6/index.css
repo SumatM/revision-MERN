@@ -1,0 +1,15 @@
+* {
+  font-family: "Roboto Condensed", sans-serif;
+ 
+}
+
+#container{
+    text-align: center;
+}
+
+#container>div{
+    width: 40%;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid;
+}
