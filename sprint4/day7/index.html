@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation - 123</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: sans-serif,monospace;
+        }
+        .parent{
+            background-color: red;
+            height: 60vh;
+            width: 60vw;
+            margin: auto;
+            padding: 15px;
+        }
+
+        .parent > div{
+            background-color: lime;
+            height: 30vh;
+            width: 30vw;
+            transform: translateX(100%);
+        }
+
+        .parent:hover .child{
+            background-color: lightgrey;
+            transform: translateY(100%);
+            transition: all 3s ease-in-out ;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Animation Explanation</h1>
+
+        <div class="parent">
+            <div class="child">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
