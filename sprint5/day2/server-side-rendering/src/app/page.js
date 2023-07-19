@@ -8,6 +8,12 @@ export default function Home() {
       <br/>
       <br/>
       <Link href='/about'>About</Link>
+      <br/>
+      <br/>
+      <Link href='/about/aboutme'>AboutMe</Link>
+      <br/>
+      <br/>
+      <Link href='/login/mylogin'>MyLogin</Link>
     </div>
   )
 }
