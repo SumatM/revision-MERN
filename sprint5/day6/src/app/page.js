@@ -9,6 +9,10 @@ export default function Home() {
       <Link href="/login">
         <button> Loin Page</button>
       </Link>
+      <br/>
+      <Link href="/font">
+        <button> Font Page</button>
+      </Link>
     </main>
   );
 }
