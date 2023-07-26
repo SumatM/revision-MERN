@@ -3,7 +3,6 @@ import Image from "next/image";
 async function getProducts() {
   let res = await fetch("https://fakestoreapi.com/products");
   let data = await res.json();
-
   return data;
 }
 
@@ -18,7 +17,6 @@ const Products = async () => {
                 height={400}
                 width={400}
             />
-            <img src="https://ca.slack-edge.com/T05CPEL5MEF-U05DFAB7WGZ-3a903a34baf2-512"/>
             <h2>{item.title}</h2>
           </div>
         );
