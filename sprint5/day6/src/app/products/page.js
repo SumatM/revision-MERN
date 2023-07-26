@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 async function getProducts() {
   let res = await fetch("https://fakestoreapi.com/products");
@@ -9,13 +9,12 @@ async function getProducts() {
 const Products = async () => {
   let products = await getProducts();
   return (
-    <div>
-      {products?.map((item) => {
+    <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)'}}>
+      {products?.map((item,i) => {
         return (
-          <div>
-            <Image src={item.image}
-                height={400}
-                width={400}
+          <div key={i}>
+            <img style={{width:'50%'}} src={item.image}
+               alt={item.title}
             />
             <h2>{item.title}</h2>
           </div>
@@ -26,3 +25,8 @@ const Products = async () => {
 };
 
 export default Products;
+
+
+export function  generateMetadata(){
+    {title:"Proudct Page"}
+}
