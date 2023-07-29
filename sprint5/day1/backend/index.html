@@ -18,8 +18,18 @@
     const form = document.getElementById('form');
     const input = document.getElementById('input');
     const button = document.querySelector('button')
-  
-    socket.on('message',(e)=> console.log(e))
+    let message = document.getElementById('messages')
+
+    socket.on('message',(e)=>{
+      const p = document.createElement('p');
+      const span = document.createElement("span")
+      console.log(e);
+      if(e.sender){
+        p.innerText = e.sender;
+        span.innerText = 'sender'
+        message.append(span,p);
+      }
+    })
 
     form.addEventListener('submit', function(e) {
     e.preventDefault();

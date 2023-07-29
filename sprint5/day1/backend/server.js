@@ -10,8 +10,10 @@ server.get("/", (req, res) => {
 });
 
 io.on("connection", (socket) => {
-  socket.on("chat message", (message) => {
-    io.emit('message',message)
+    console.log();
+  socket.on("chat message", (message) => {  
+    io.emit('message',{sender:message,id:socket.id})
+    
   });
 });
 
