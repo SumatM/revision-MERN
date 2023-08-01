@@ -40,3 +40,9 @@ var Color;
 })(Color || (Color = {}));
 let selectedColor = Color.Blue;
 console.log(selectedColor);
+// union types | 
+let pet = 'cat';
+let steetAnimals = 'dog';
+let candidata = { name: 'sumat', age: 55, class: 'tenth', role: 'teacher' };
+// tuples 
+let mypet = [2, 'cat', 'dog'];
