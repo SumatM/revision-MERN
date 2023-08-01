@@ -29,7 +29,7 @@ Create functions that accept parameters with union types. Handle different cases
 Exercise 5: Intersection Types
 Define two or more interfaces and use intersection types to create a new interface that combines their properties. Implement functions that accept parameters of the intersection type.
 
-Exercise 6: Literal Types
+Literal Types
 Create variables with literal types representing specific values. Use these literals in functions to perform specific actions based on the input value.
 
 Exercise 7: Nullable Types
